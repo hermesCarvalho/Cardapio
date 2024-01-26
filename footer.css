@@ -1,0 +1,66 @@
+.footer {
+  background:#8E0000 ;
+}
+
+.footer-container {
+  max-width: 390px; /* Define a largura máxima desejada */
+  padding: 60px 20px; /* Ajusta o espaçamento conforme necessário */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  gap: 40px; /* Reduz o espaçamento entre os elementos */
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 1.75rem; /* Reduz o tamanho da fonte */
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 20px; /* Reduz o espaçamento inferior */
+}
+
+.footer-contato li a {
+  color: #ffffff;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  font-size: 1rem; /* Reduz o tamanho da fonte */
+  color: #8f8f8f;
+}
+
+
+@media (min-width: 400px)  {
+  .footer-container {
+      grid-template-columns: 1fr 1fr; /* Mantém uma coluna para telas entre 400px e 799px */
+      gap: 20px;
+  }
+
+  .footer-texto {
+      font-size: 1.25rem; /* Ajusta o tamanho da fonte para telas entre 400px e 799px */
+  }
+
+  .footer-contato li {
+      font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas entre 400px e 799px */
+      margin-bottom: 15px; /* Ajusta o espaçamento inferior para telas entre 400px e 799px */
+  }
+}
+
+@media (min-width: 800px) {
+  .footer-container {
+      grid-template-columns: 1fr ; /* Restaura duas colunas em telas maiores */
+      gap: 100px;
+  }
+
+  .footer-contato li {
+      font-size: 2.25rem; /* Restaura o tamanho original da fonte */
+      margin-bottom: 30px; /* Restaura o espaçamento inferior original */
+  }
+}
